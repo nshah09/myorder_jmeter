@@ -1,0 +1,67 @@
+<settings xmlns="http://maven.apache.org/SETTINGS/1.1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.1.0 http://maven.apache.org/xsd/settings-1.1.0.xsd 
+http://maven.apache.org/SETTINGS/1.1.0 ">
+
+    <servers>
+        <server>
+            <id>Mobiquity</id>
+            <username>deployment</username>
+            <password>x@t0n!te-xW@y</password>
+        </server>
+
+        <server>
+            <id>xaton-group</id>
+            <username>deployment</username>
+            <password>x@t0n!te-xW@y</password>
+        </server>
+
+        <server>
+            <id>xaton-snapshot</id>
+            <username>deployment</username>
+            <password>x@t0n!te-xW@y</password>
+        </server>
+    </servers>
+
+    <mirrors>
+        <mirror>
+            <id>xaton-group</id>
+            <mirrorOf>*</mirrorOf>
+            <url>http://nexus.mobiquityinc.com/nexus/content/repositories/xaton-group</url>
+        </mirror>
+    </mirrors>
+
+    <activeProfiles>
+        <activeProfile>xaton-group</activeProfile>
+    </activeProfiles>
+
+    <profiles>
+        <profile>
+            <id>xaton-group</id>
+            <repositories>
+                <repository>
+                    <id>xaton-group</id>
+                    <url>http://nexus.mobiquityinc.com/nexus/content/repositories/xaton-group</url>
+                    <releases>
+                        <enabled>true</enabled>
+                    </releases>
+                    <snapshots>
+                        <enabled>true</enabled>
+                    </snapshots>
+                </repository>
+            </repositories>
+            <pluginRepositories>
+                <pluginRepository>
+                    <id>xaton-group</id>
+                    <url>http://nexus.mobiquityinc.com/nexus/content/repositories/xaton-group</url>
+                    <releases>
+                        <enabled>true</enabled>
+                    </releases>
+                    <snapshots>
+                        <enabled>true</enabled>
+                    </snapshots>
+                </pluginRepository>
+            </pluginRepositories>
+        </profile>
+    </profiles>
+
+</settings>
