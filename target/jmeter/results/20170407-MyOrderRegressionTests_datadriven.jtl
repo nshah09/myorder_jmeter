@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testResults version="1.2">
+<httpSample t="700" it="0" lt="0" ct="423" ts="1491561227676" s="true" lb="Login-Auth Login Request Pin" rc="204" rm="No Content" tn="Login 1-1" dt="text" by="491" sby="514" ng="1" na="1"/>
+<sample t="11648" it="0" lt="0" ct="0" ts="1491561228385" s="true" lb="Login-Get Verification Code" rc="200" rm="code=QGWDT" tn="Login 1-1" dt="text" by="10" sby="0" ng="1" na="1"/>
+<httpSample t="345" it="0" lt="345" ct="141" ts="1491561243049" s="true" lb="Login-Auth Login" rc="200" rm="OK" tn="Login 1-1" dt="text" by="880" sby="522" ng="1" na="1"/>
+<httpSample t="157" it="0" lt="0" ct="0" ts="1491561243396" s="true" lb="Login-Auth Logout" rc="204" rm="No Content" tn="Login 1-1" dt="text" by="491" sby="273" ng="1" na="1"/>
+
+</testResults>
