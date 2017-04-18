@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<jmeterTestPlan version="1.2" properties="3.1" jmeter="3.0 r1743807">
+<jmeterTestPlan version="1.2" properties="3.1" jmeter="3.1 r1770033">
   <hashTree>
     <TestPlan guiclass="TestPlanGui" testclass="TestPlan" testname="MyorderTEST" enabled="true">
       <stringProp name="TestPlan.comments"></stringProp>
@@ -21,6 +21,16 @@
           <elementProp name="BASE_DIR" elementType="Argument">
             <stringProp name="Argument.name">BASE_DIR</stringProp>
             <stringProp name="Argument.value">${__BeanShell(import org.apache.jmeter.services.FileServer; FileServer.getFileServer().getBaseDir();)}${__BeanShell(File.separator,)}result.csv</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="workspace" elementType="Argument">
+            <stringProp name="Argument.name">workspace</stringProp>
+            <stringProp name="Argument.value">/usr/share/tomcat7/.jenkins/jobs/Jmeter-ci-greenhouse/workspace</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="workspace_local" elementType="Argument">
+            <stringProp name="Argument.name">workspace_local</stringProp>
+            <stringProp name="Argument.value">/Users/nishitshah1/.jenkins/jobs/myorder/workspace</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
         </collectionProp>
@@ -947,7 +957,7 @@ import javax.mail.*;
         <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="CSV Data Set Config" enabled="true">
           <stringProp name="delimiter">,</stringProp>
           <stringProp name="fileEncoding"></stringProp>
-          <stringProp name="filename">/Users/nishitshah1/.jenkins/jobs/myorder/workspace/TestData/login.csv</stringProp>
+          <stringProp name="filename">${workspace_local}/TestData/login.csv</stringProp>
           <boolProp name="quotedData">true</boolProp>
           <boolProp name="recycle">true</boolProp>
           <stringProp name="shareMode">shareMode.all</stringProp>
