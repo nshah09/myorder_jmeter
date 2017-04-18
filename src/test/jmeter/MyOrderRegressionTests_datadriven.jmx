@@ -20,7 +20,7 @@
           </elementProp>
           <elementProp name="BASE_DIR" elementType="Argument">
             <stringProp name="Argument.name">BASE_DIR</stringProp>
-            <stringProp name="Argument.value">${__BeanShell(import org.apache.jmeter.services.FileServer; FileServer.getFileServer().getBaseDir();)}${__BeanShell(File.separator,)}result.csv</stringProp>
+            <stringProp name="Argument.value">${__BeanShell(import org.apache.jmeter.services.FileServer; FileServer.getFileServer().getBaseDir();)}${__BeanShell(File.separator,)}result_${__time(d-MMM-yyyy hh:mm:ss,)}.csv</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
           <elementProp name="workspace" elementType="Argument">
