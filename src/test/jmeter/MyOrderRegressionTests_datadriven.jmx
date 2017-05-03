@@ -13,8 +13,8 @@
     <hashTree>
       <Arguments guiclass="ArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
         <collectionProp name="Arguments.arguments">
-          <elementProp name="Username" elementType="Argument">
-            <stringProp name="Argument.name">Username</stringProp>
+          <elementProp name="username" elementType="Argument">
+            <stringProp name="Argument.name">username</stringProp>
             <stringProp name="Argument.value">myorderuser2+100376@gmail.com</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
@@ -962,7 +962,7 @@ import javax.mail.*;
           <boolProp name="recycle">true</boolProp>
           <stringProp name="shareMode">shareMode.all</stringProp>
           <boolProp name="stopThread">false</boolProp>
-          <stringProp name="variableNames">username,deviceid,callbackurl</stringProp>
+          <stringProp name="variableNames">Username,deviceid,callbackurl</stringProp>
         </CSVDataSet>
         <hashTree/>
         <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Login-Auth Login Request Pin" enabled="true">
@@ -972,7 +972,7 @@ import javax.mail.*;
               <elementProp name="" elementType="HTTPArgument">
                 <boolProp name="HTTPArgument.always_encode">false</boolProp>
                 <stringProp name="Argument.value">{&#xd;
-  &quot;userName&quot;: &quot;${username}&quot;,&#xd;
+  &quot;userName&quot;: &quot;${Username}&quot;,&#xd;
   &quot;deviceId&quot;: &quot;${deviceid}&quot;,&#xd;
   &quot;callbackURL&quot;: &quot;${callbackurl}&quot;&#xd;
 }</stringProp>
@@ -1122,7 +1122,7 @@ import javax.mail.*;
               <elementProp name="" elementType="HTTPArgument">
                 <boolProp name="HTTPArgument.always_encode">false</boolProp>
                 <stringProp name="Argument.value">{&#xd;
-  &quot;userName&quot;: &quot;${username}&quot;,&#xd;
+  &quot;userName&quot;: &quot;${Username}&quot;,&#xd;
   &quot;deviceId&quot;: &quot;${deviceid}&quot;,&#xd;
   &quot;pin&quot;: &quot;${code1}&quot;,&#xd;
   &quot;callbackURL&quot;: &quot;${callbackurl}&quot;&#xd;
