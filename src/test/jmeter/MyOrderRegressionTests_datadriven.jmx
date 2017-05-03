@@ -1239,7 +1239,7 @@ for (int i=0;i&lt;arguments.getArgumentCount();i++)
           <hashTree/>
         </hashTree>
       </hashTree>
-      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Parking" enabled="false">
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Parking" enabled="true">
         <stringProp name="ThreadGroup.on_sample_error">startnextloop</stringProp>
         <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
           <boolProp name="LoopController.continue_forever">false</boolProp>
@@ -1255,7 +1255,7 @@ for (int i=0;i&lt;arguments.getArgumentCount();i++)
       </ThreadGroup>
       <hashTree>
         <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="CSV Data Set Config" enabled="true">
-          <stringProp name="filename">/Projects/MyOrder/TestData/parking.csv</stringProp>
+          <stringProp name="filename">${workspace_local}/TestData/parking.csv</stringProp>
           <stringProp name="fileEncoding"></stringProp>
           <stringProp name="variableNames">zonecode,licenseplate</stringProp>
           <stringProp name="delimiter">,</stringProp>
@@ -1925,7 +1925,7 @@ vars.put(&quot;int_i&quot;, String.valueOf(i));
           </hashTree>
         </hashTree>
       </hashTree>
-      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Fuel" enabled="false">
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Fuel" enabled="true">
         <stringProp name="ThreadGroup.on_sample_error">startnextloop</stringProp>
         <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
           <boolProp name="LoopController.continue_forever">false</boolProp>
@@ -1941,7 +1941,7 @@ vars.put(&quot;int_i&quot;, String.valueOf(i));
       </ThreadGroup>
       <hashTree>
         <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="fuel data" enabled="true">
-          <stringProp name="filename">/Projects/MyOrder/TestData/fuel.csv</stringProp>
+          <stringProp name="filename">${workspace_local}/TestData/fuel.csv</stringProp>
           <stringProp name="fileEncoding"></stringProp>
           <stringProp name="variableNames">lat,long,stationId,scenario,caic,pumps,pumpId,prepaidAmount,pumpNumber</stringProp>
           <stringProp name="delimiter">,</stringProp>
@@ -2478,7 +2478,7 @@ import javax.mail.*;
             </HeaderManager>
             <hashTree/>
             <ConstantTimer guiclass="ConstantTimerGui" testclass="ConstantTimer" testname="Constant Timer" enabled="true">
-              <stringProp name="ConstantTimer.delay">3000</stringProp>
+              <stringProp name="ConstantTimer.delay">10000</stringProp>
             </ConstantTimer>
             <hashTree/>
           </hashTree>
@@ -2538,7 +2538,7 @@ import javax.mail.*;
             </HeaderManager>
             <hashTree/>
             <ConstantTimer guiclass="ConstantTimerGui" testclass="ConstantTimer" testname="Constant Timer" enabled="true">
-              <stringProp name="ConstantTimer.delay">3000</stringProp>
+              <stringProp name="ConstantTimer.delay">10000</stringProp>
             </ConstantTimer>
             <hashTree/>
           </hashTree>
@@ -2601,7 +2601,7 @@ import javax.mail.*;
             </HeaderManager>
             <hashTree/>
             <ConstantTimer guiclass="ConstantTimerGui" testclass="ConstantTimer" testname="Constant Timer" enabled="true">
-              <stringProp name="ConstantTimer.delay">3000</stringProp>
+              <stringProp name="ConstantTimer.delay">10000</stringProp>
             </ConstantTimer>
             <hashTree/>
           </hashTree>
@@ -3942,7 +3942,7 @@ long ts = System.currentTimeMillis();
           </hashTree>
         </hashTree>
       </hashTree>
-      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="WalletOrders-Test" enabled="false">
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="WalletOrders-Test" enabled="true">
         <stringProp name="ThreadGroup.on_sample_error">startnextloop</stringProp>
         <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
           <boolProp name="LoopController.continue_forever">false</boolProp>
@@ -3958,7 +3958,7 @@ long ts = System.currentTimeMillis();
       </ThreadGroup>
       <hashTree>
         <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="Wallet data" enabled="true">
-          <stringProp name="filename">/Projects/MyOrder/TestData/wallet2.csv</stringProp>
+          <stringProp name="filename">${workspace_local}/TestData/wallet2.csv</stringProp>
           <stringProp name="fileEncoding"></stringProp>
           <stringProp name="variableNames">merchantid,quantity,categoryid,delivery,cartid</stringProp>
           <stringProp name="delimiter">,</stringProp>
