@@ -15,7 +15,7 @@
         <collectionProp name="Arguments.arguments">
           <elementProp name="BASE_DIR" elementType="Argument">
             <stringProp name="Argument.name">BASE_DIR</stringProp>
-            <stringProp name="Argument.value">${__BeanShell(import org.apache.jmeter.services.FileServer; FileServer.getFileServer().getBaseDir();)}${__BeanShell(File.separator,)}result_${__time(d-MMM-yyyy hh:mm:ss,)}.csv</stringProp>
+            <stringProp name="Argument.value">${__BeanShell(import org.apache.jmeter.services.FileServer; FileServer.getFileServer().getBaseDir();)}${__BeanShell(File.separator,)}</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
           <elementProp name="workspace" elementType="Argument">
@@ -36,7 +36,7 @@
         </collectionProp>
       </Arguments>
       <hashTree/>
-      <ResultCollector guiclass="SummaryReport" testclass="ResultCollector" testname="Summary Report" enabled="false">
+      <ResultCollector guiclass="SummaryReport" testclass="ResultCollector" testname="Summary Report" enabled="true">
         <boolProp name="ResultCollector.error_logging">false</boolProp>
         <objProp>
           <name>saveConfig</name>
@@ -70,7 +70,7 @@
             <connectTime>true</connectTime>
           </value>
         </objProp>
-        <stringProp name="filename">/Projects/MyOrder/JMeterReports/RegressionTesting.csv</stringProp>
+        <stringProp name="filename">${BASE_DIR}RegressionTesting_${__time(d-MMM-yyyy_hh:mm:ss,)}.csv</stringProp>
       </ResultCollector>
       <hashTree/>
       <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree" enabled="false">
